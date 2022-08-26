@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+}
+body {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(rm251-mind-01-a.jpg);
+    background-size: 500vh;
+    background-repeat: no-repeat,repeat;
+    background-position: center;
+}
+/*nav*/
+nav {
+    width: 100%;
+    height: 100px;
+    background: black;
+    line-height: 75px;
+    padding: 0 370px;
+    position: absolute;
+    top: 0;
+}
+nav ul  {
+    float: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 13px 0px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px 35px;
+    padding: 10px 20px;
+    transition: .4s;
+}
+ul li a:hover {
+    background: #3813b7;
+    color: white;
+    box-shadow: 0 0 15px #3813b7,
+    0 0 45px #3813b7, 0 0 45px #3813b7;
+    transition-delay: 0.0s;
+}
+.checkbtn {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    display: none;
+}
+#check {
+    display: none;
+}
+.text h1 {
+    padding: 150px 0 0 0;
+    font-size: 50px;
+    color: white;
+}
+.cards {
+    display: flex;
+    padding: 100px 0 0 0;
+}
+.card-one {
+    background: #000;
+    padding: 150px 30px;
+    border-radius: 10px;
+    transition: all .40s;
+    margin: 0 0 0 45px;
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    cursor: pointer;
+}
+.one-img {
+    padding: 20% 0;
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    border-radius: 10px;
+}
+.card-one h3 {
+    color: white;
+    padding: 20px 0 0 0;
+    font-size: 15px;
+}
+    .card-two {
+    background: #000;
+    padding: 150px 30px;
+    border-radius: 10px;
+    transition: all .40s;
+    margin: 0 0 0 45px;
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.two-img {
+    padding: 17% 0;
+}
+.card-two h3 {
+    color: white;
+    padding: 20px 0 0 0;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+nav {
+    padding: 0px 50px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;    
+    grid-gap: 5rem;
+    padding-right: 80px;
+}
+.text h1 {
+    padding-right: 27px;
+}
+.checkbtn {
+    display: block;
+    color: white;
+    font-size: 50px;
+    margin-top: 15px;
+}
+nav ul {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    transition: .3s;
+}
+nav ul li {
+    display: block;
+    margin: 60px 0px;
+    line-height: 20px;
+}
+#check:checked ~ ul{
+    display: block;
+    left: 0;
+}
+}
