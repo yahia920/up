@@ -127,10 +127,10 @@ nav {
     display: grid;
     grid-template-columns: 1fr;    
     grid-gap: 5rem;
-    padding-right: 80px;
+    padding-right: 40px;
 }
 .text h1 {
-    padding-right: 27px;
+    padding-right: 30px;
 }
 .checkbtn {
     display: block;
